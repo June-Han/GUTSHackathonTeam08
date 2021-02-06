@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Melody</string>
+    <string name="nameCardEnter">Enter your name:</string>
+    <string name="namePlaceholder">name/alias</string>
+    <string name="nameCardContinue">Proceed</string>
 </resources>
