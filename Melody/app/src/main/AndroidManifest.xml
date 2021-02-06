@@ -23,7 +23,6 @@
                 android:value=
                     "com.team08.myapplication.Name" />
         </activity>
-        <activity android:name=".Chat" />
     </application>
 
 </manifest>
