@@ -1,5 +1,6 @@
 package com.team08.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -76,6 +77,27 @@ class ChatActivity : AppCompatActivity() {
         })
     }
 
+    fun chatBttnFn(view: View) {
+        val intent1 = Intent(this, ChatActivity::class.java)
+        startActivity(intent1)
+    }
+
+    fun quoteBttnFn(view: View) {
+//        val intent2 = Intent(this, BackgroundSoundService::class.java)
+//        startActivity(intent2)
+    }
+
+    fun musicBttnFn(view: View) {
+        val intent3 = Intent(this, Music::class.java)
+        startActivity(intent3)
+    }
+
+    fun helplineBttnFn(view: View) {
+//        val intent4 = Intent(this, helpline::class.java)
+//        startActivity(intent4)
+    }
+
+
     fun SyncData() {
         if (!haltFlag)
         {
@@ -111,8 +133,6 @@ class ChatActivity : AppCompatActivity() {
             queue.add(stringRequest)
         }
     }
-
-
 
     fun SendMessage(view: View) {
         haltFlag = false
