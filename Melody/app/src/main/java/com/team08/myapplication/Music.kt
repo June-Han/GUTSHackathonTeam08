@@ -20,7 +20,7 @@ class Music : AppCompatActivity() {
     }
 
     fun chatBttnFn(view: View) {
-        val intent1 = Intent(this, Chat::class.java)
+        val intent1 = Intent(this, ChatActivity::class.java)
         startActivity(intent1)
     }
 
