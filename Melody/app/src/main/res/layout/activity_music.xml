@@ -26,7 +26,7 @@
                 android:clickable="true"
                 android:focusable="auto"
                 android:onClick="PlayBackgroundSound1"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="4dp">
 
                 <LinearLayout
@@ -65,7 +65,7 @@
                 android:clickable="true"
                 android:focusable="auto"
                 android:onClick="PlayBackgroundSound2"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="4dp">
 
                 <LinearLayout
@@ -110,7 +110,7 @@
                 android:clickable="true"
                 android:focusable="auto"
                 android:onClick="PlayBackgroundSound3"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="4dp">
 
                 <LinearLayout
@@ -148,7 +148,7 @@
                 android:clickable="true"
                 android:focusable="auto"
                 android:visibility="invisible"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="4dp">
 
                 <LinearLayout

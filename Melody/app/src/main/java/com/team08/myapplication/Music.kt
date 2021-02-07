@@ -12,11 +12,15 @@ class Music : AppCompatActivity() {
 //    var mMediaPlayer : MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_music)
 
+       val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
 //    val musicCardText1: TextView = findViewById(R.id.musicCardText1) as TextView
 //    val song1: String = musicCardText1.text.toString()
-
     }
 
     fun chatBttnFn(view: View) {
