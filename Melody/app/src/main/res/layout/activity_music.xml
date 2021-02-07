@@ -6,176 +6,198 @@
     android:layout_height="match_parent"
     tools:context=".Music">
 
-    <TableLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableRow
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/musicCard1"
-                android:layout_width="160dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:focusable="auto"
-                android:onClick="PlayBackgroundSound1"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
-                app:cardCornerRadius="4dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/musicCard1"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical"
-                    android:padding="8dp">
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:onClick="PlayBackgroundSound1"
+                    app:cardBackgroundColor="?attr/colorPrimaryDark"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
 
-                    <TextView
-                        android:id="@+id/musicCardText1"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_title1"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_desc1"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:contentDescription="@string/musicCard_content_description_media1"
+                            app:srcCompat="@drawable/slowmotion" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/musicCard2"
-                android:layout_width="160dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:focusable="auto"
-                android:onClick="PlayBackgroundSound2"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
-                app:cardCornerRadius="4dp">
+                        <TextView
+                            android:id="@+id/musicCardText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_title1" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_desc1" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/musicCard2"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical"
-                    android:padding="8dp">
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:onClick="PlayBackgroundSound2"
+                    app:cardBackgroundColor="?attr/colorPrimaryDark"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
 
-                    <TextView
-                        android:id="@+id/musicCardText2"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_title2"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_desc2"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-        </TableRow>
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:contentDescription="@string/musicCard_content_description_media2"
+                            app:srcCompat="@drawable/november" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/musicCardText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_title2" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/musicCard3"
-                android:layout_width="160dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:focusable="auto"
-                android:onClick="PlayBackgroundSound3"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
-                app:cardCornerRadius="4dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_desc2" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/musicCard3"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical"
-                    android:padding="8dp">
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:onClick="PlayBackgroundSound3"
+                    app:cardBackgroundColor="?attr/colorPrimaryDark"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
 
-                    <TextView
-                        android:id="@+id/musicCardText3"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_title3"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                    <TextView
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:contentDescription="@string/musicCard_content_description_media3"
+                            app:srcCompat="@drawable/adventure" />
+
+                        <TextView
+                            android:id="@+id/musicCardText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_title3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_desc3" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:visibility="invisible"
+                    app:cardBackgroundColor="?attr/colorPrimaryDark"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_desc3"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                        android:layout_gravity="bottom"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:focusable="auto"
-                android:visibility="invisible"
-                app:cardBackgroundColor="?attr/colorPrimaryDark"
-                app:cardCornerRadius="4dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_title3"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_title3"
-                        android:textAppearance="?attr/textAppearanceHeadline6" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="2dp"
-                        android:text="@string/m_card_desc3"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-        </TableRow>
-    </TableLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/m_card_desc3" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
