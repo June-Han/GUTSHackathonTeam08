@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        app:cardElevation="3dp"
+        app:strokeColor="@color/melodyPrimary"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ChooseTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15sp"
+                android:text="@string/nameCardTheme"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/colorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/ChooseTheme">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ThemeBlue"
+                    android:backgroundTint="#7bbdfe"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/melodyPrimary"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ThemePink"
+                    android:backgroundTint="@color/melodyPrimary1"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/melodyPrimary1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ThemeGreen"
+                    android:backgroundTint="@color/melodyPrimary2"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/melodyPrimary2"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ThemeTurquoise"
+                    android:backgroundTint="@color/melodyPrimary3"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/melodyPrimary3"/>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ProceedToChat"
+                android:layout_below="@id/colorButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/nameCardContinue" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.team08.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +12,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Melody">
+
         <activity android:name=".Music"></activity>
-        <activity android:name=".Name" />
-        <activity android:name=".Chat" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <service android:name=".BackgroundSoundService" />
+        <activity android:name=".Name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "com.team08.myapplication.Name" />
+        </activity>
+
+        <activity android:name=".ThemeChange">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "com.team08.myapplication.ThemeChange" />
+        </activity>
+
+        <activity
+            android:name=".ChatActivity"
+            android:label="Chat">
+        </activity>
+
+        <activity android:name=".Quotes"/>
+        <activity android:name=".Relationship_quotes"/>
+        <activity android:name=".Friendship_quotes"/>
+        <activity android:name=".Life_quotes"/>
     </application>
 
 </manifest>

@@ -4,13 +4,32 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.ImageButton
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_main)
         PlayDefaultSound()
+
+        /*val quotesbtn: Button = findViewById(R.id.quotes_btn)
+    quotesbtn.setOnClickListener() {
+        val intent = Intent(this, Quotes::class.java)
+        startActivity(intent)
+    }*/
+
+        val button = findViewById<Button>(R.id.TestButton)
+        button.setOnClickListener {
+            val intent = Intent(this, Name::class.java)
+            startActivity(intent)
+        }
+
     }
+
 
     fun chatBttnFn(view: View) {
         val intent1 = Intent(this, Chat::class.java)
