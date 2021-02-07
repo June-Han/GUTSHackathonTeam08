@@ -9,7 +9,7 @@ import com.team08.myapplication.Utils
 class ThemeChange : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Utils.onActivityCreateSetTheme(this);
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_theme_change)
 
         //set Buttons to listeners
@@ -36,7 +36,7 @@ class ThemeChange : AppCompatActivity() {
             savedInstanceState?.putInt("ThemeNo", 3)
         }
         toChatButton.setOnClickListener{
-            val intent = Intent(this, ChatActivity::class.java)
+            val intent = Intent(this, Quotes::class.java)
             startActivity(intent)
         }
     }

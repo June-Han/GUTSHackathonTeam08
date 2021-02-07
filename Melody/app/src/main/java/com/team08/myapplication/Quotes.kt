@@ -10,7 +10,13 @@ class Quotes : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Utils.onActivityCreateSetTheme(this)
         setContentView(com.team08.myapplication.R.layout.activity_quotes)
+
+        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
 
         val myRBtn: ImageButton = findViewById(com.team08.myapplication.R.id.relationship_btn)
         val myFBtn: ImageButton = findViewById(com.team08.myapplication.R.id.Friendship_btn2)
