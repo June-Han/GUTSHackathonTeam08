@@ -16,6 +16,7 @@ class ThemeChange : AppCompatActivity() {
         val sakuraButton = findViewById<Button>(R.id.ThemePink)
         val forestButton = findViewById<Button>(R.id.ThemeGreen)
         val aquaButton = findViewById<Button>(R.id.ThemeTurquoise)
+        val toChatButton = findViewById<Button>(R.id.ProceedToChat)
 
         seaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeSea);
@@ -28,11 +29,10 @@ class ThemeChange : AppCompatActivity() {
         }
         aquaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeAqua);
-            val button = findViewById<Button>(R.id.ProceedButton)
-            button.setOnClickListener {
-                val intent = Intent(this, Name::class.java)
-                startActivity(intent)
-            }
+        }
+        toChatButton.setOnClickListener{
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
         }
     }
 }

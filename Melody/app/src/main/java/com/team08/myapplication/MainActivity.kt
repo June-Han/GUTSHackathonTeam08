@@ -14,11 +14,5 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Name::class.java)
             startActivity(intent)
         }
-
-        val buttonTwo = findViewById<Button>(R.id.TestButtonTwo)
-        buttonTwo.setOnClickListener{
-            val intent = Intent(this, ChatActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
