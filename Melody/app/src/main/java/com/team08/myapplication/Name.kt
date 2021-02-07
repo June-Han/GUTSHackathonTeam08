@@ -19,10 +19,6 @@ class Name : AppCompatActivity() {
         if (themeNo != null) {
             Utils.changeToTheme(this, themeNo)
         }
-        else
-        {
-            Utils.changeToTheme(this, themeNum)
-        }
 
         val proceedButton = findViewById<Button>(R.id.ProceedButton)
         if (savedInstanceState != null)

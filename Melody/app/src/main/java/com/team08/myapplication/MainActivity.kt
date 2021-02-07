@@ -20,10 +20,6 @@ class MainActivity : AppCompatActivity() {
         if (themeNo != null) {
             Utils.changeToTheme(this, themeNo)
         }
-        else
-        {
-            Utils.changeToTheme(this, themeNum)
-        }
 
         /*val quotesbtn: Button = findViewById(R.id.quotes_btn)
     quotesbtn.setOnClickListener() {

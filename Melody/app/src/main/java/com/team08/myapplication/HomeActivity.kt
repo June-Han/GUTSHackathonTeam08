@@ -17,13 +17,10 @@ class HomeActivity : AppCompatActivity() {
 
         val buttonContinue = findViewById<Button>(R.id.buttonContinue)
 
-        val clickListener = View.OnClickListener { view ->
-            when (view.getId()) {
-                R.id.buttonContinue -> startActivity(Intent(this@HomeActivity, MainActivity::class.java))
-
-            }
+        buttonContinue.setOnClickListener() {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
-        buttonContinue.setOnClickListener(clickListener)
     }
 }
