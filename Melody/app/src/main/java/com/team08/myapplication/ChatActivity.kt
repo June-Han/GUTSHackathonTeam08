@@ -105,7 +105,7 @@ class ChatActivity : AppCompatActivity() {
             var layoutManager: RecyclerView.LayoutManager? = null
             var adapter: RecyclerView.Adapter<ChatRecycleAdapter.ViewHolder>? = null
             // Instantiate the RequestQueue.
-            val linkTrang = "https://melody-0f6f.restdb.io/rest/chat"
+            val linkTrang = "https://melody-0f6f.restdb.io/rest/chat?sort=ChatId"
 
             val queue = Volley.newRequestQueue(this)
 
