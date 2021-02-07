@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,17 +12,17 @@ class MainActivity : AppCompatActivity() {
         //Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_main)
 
-        /*super.onRestart()
-        savedInstanceState?.putInt("ThemeNo", 0)
-        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
-        if (themeNo != null) {
-            Utils.changeToTheme(this, themeNo)
-        }*/
+        val quotesbtn: Button = findViewById(R.id.quotes_btn)
+        quotesbtn.setOnClickListener() {
+            val intent = Intent(this, Quotes::class.java)
+            startActivity(intent)
+        }
 
         val button = findViewById<Button>(R.id.TestButton)
-        button.setOnClickListener{
+        button.setOnClickListener {
             val intent = Intent(this, Name::class.java)
             startActivity(intent)
         }
     }
+
 }

@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Melody</string>
+    <string name="title_activity_quotes" translatable="false">Quotes</string>
+    <string name="title_activity_Rquotes" translatable="false">Relationship Quotes</string>
+    <string name="title_activity_Fquotes" translatable="false">Friendship Quotes</string>
+    <string name="title_activity_Lquotes" translatable="false">Life Quotes</string>
     <string name="nameCardEnter">Enter your name:</string>
     <string name="namePlaceholder">name/alias</string>
     <string name="nameCardContinue">Proceed</string>
