@@ -210,24 +210,22 @@
         android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="horizontal">
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="bottom">
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="musicBttnFn"
-                    android:text="@string/musicBttn" />
+                    android:onClick="quoteBttnFn"
+                    android:text="@string/quotesBttn" />
 
                 <Button
                     android:id="@+id/button4"
@@ -238,23 +236,21 @@
                     android:text="@string/chatBttn" />
 
                 <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="musicBttnFn"
+                    android:text="@string/musicBttn" />
+
+                <Button
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="helplineBttnFn"
                     android:text="@string/helplineBttn" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="quoteBttnFn"
-                    android:text="@string/quotesBttn" />
             </TableRow>
-
         </TableLayout>
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
