@@ -38,6 +38,15 @@ class ChatRecycleAdapter(private val chatRecords: Array<Chat>): RecyclerView.Ada
             chatUsernameTextView = itemView.findViewById(R.id.txtChatUsername)
             chatTimestampTextView = itemView.findViewById(R.id.txtChatTimestamp)
             chatRecordTextView = itemView.findViewById(R.id.txtChatPlaceHolder)
+            chatUsernameTextView.setOnClickListener() {
+                isTyping = false
+            }
+            chatTimestampTextView.setOnClickListener() {
+                isTyping = false
+            }
+            chatRecordTextView.setOnClickListener() {
+                isTyping = false
+            }
         }
     }
 }

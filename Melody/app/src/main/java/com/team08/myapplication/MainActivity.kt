@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.TestButton)
         button.setOnClickListener {
-            val intent = Intent(this, Name::class.java)
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun chatBttnFn(view: View) {
-        val intent1 = Intent(this, Chat::class.java)
+        val intent1 = Intent(this, ChatActivity::class.java)
         startActivity(intent1)
     }
 
