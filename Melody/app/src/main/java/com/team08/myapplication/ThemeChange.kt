@@ -1,10 +1,10 @@
 package com.team08.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.team08.myapplication.Utils
-
 class ThemeChange : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,17 +17,22 @@ class ThemeChange : AppCompatActivity() {
         val forestButton = findViewById<Button>(R.id.ThemeGreen)
         val aquaButton = findViewById<Button>(R.id.ThemeTurquoise)
 
-        seaButton.setOnClickListener{
+        seaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeSea);
         }
-        sakuraButton.setOnClickListener{
+        sakuraButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeSakura);
         }
-        forestButton.setOnClickListener{
+        forestButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeForest);
         }
-        aquaButton.setOnClickListener{
+        aquaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeAqua);
+            val button = findViewById<Button>(R.id.ProceedButton)
+            button.setOnClickListener {
+                val intent = Intent(this, Name::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

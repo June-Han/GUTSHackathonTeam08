@@ -27,6 +27,15 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:text="@string/nameCardContinue"
             app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/TestButtonTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/nameCardContinue"
+            app:layout_constraintRight_toRightOf="parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
