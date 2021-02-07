@@ -25,10 +25,10 @@ class Quotes : AppCompatActivity() {
         this.title = getString(com.team08.myapplication.R.string.title_activity_quotes)
 
 
-      myRBtn.setOnClickListener(){
+        myRBtn.setOnClickListener(){
           val intent = Intent(this, Relationship_quotes::class.java)
           startActivity(intent)
-      }
+        }
         myFBtn.setOnClickListener(){
             val intent = Intent(this, Friendship_quotes::class.java)
             startActivity(intent)
@@ -37,28 +37,28 @@ class Quotes : AppCompatActivity() {
             val intent = Intent(this, Life_quotes::class.java)
             startActivity(intent)
         }
+        
 
-
-    }
-    fun chatBttnFn(view: View) {
+        }
+        fun chatBttnFn(view: View) {
         val intent1 = Intent(this, ChatActivity::class.java)
         startActivity(intent1)
-    }
+        }
 
-    fun quoteBttnFn(view: View) {
+        fun quoteBttnFn(view: View) {
         val intent2 = Intent(this, Quotes::class.java)
         startActivity(intent2)
-    }
+        }
 
-    fun musicBttnFn(view: View) {
+        fun musicBttnFn(view: View) {
         val intent3 = Intent(this, Music::class.java)
         startActivity(intent3)
-    }
+        }
 
-    fun helplineBttnFn(view: View) {
+        fun helplineBttnFn(view: View) {
         val intent4 = Intent(this, HelplineActivity::class.java)
         startActivity(intent4)
-    }
+        }
 
 
 }
