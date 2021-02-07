@@ -16,10 +16,10 @@
     <string name="nameCardEnter">Enter your name:</string>
     <string name="namePlaceholder">name/alias</string>
     <string name="nameCardContinue">Proceed</string>
-    <string name="chatBttn">Chat</string>
+    <string name="chatBttn">Chats</string>
     <string name="quotesBttn">Quotes</string>
-    <string name="musicBttn">Music</string>
-    <string name="helplineBttn">Helpline</string>
+    <string name="musicBttn">Mediate</string>
+    <string name="helplineBttn">SOS</string>
     <string name="m_card_title1">slowmotion</string>
     <string name="m_card_desc1">Benjamin Tissot</string>
     <string name="m_card_title2">november</string>
