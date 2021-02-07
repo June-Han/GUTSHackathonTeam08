@@ -29,8 +29,8 @@ class Music : AppCompatActivity() {
     }
 
     fun quoteBttnFn(view: View) {
-//        val intent2 = Intent(this, BackgroundSoundService::class.java)
-//        startActivity(intent2)
+        val intent2 = Intent(this, Quotes::class.java)
+       startActivity(intent2)
     }
 
     fun musicBttnFn(view: View) {
@@ -39,8 +39,8 @@ class Music : AppCompatActivity() {
     }
 
     fun helplineBttnFn(view: View) {
-//        val intent4 = Intent(this, helpline::class.java)
-//        startActivity(intent4)
+       val intent4 = Intent(this, HelplineActivity::class.java)
+        startActivity(intent4)
     }
 
     fun PlayBackgroundSound1(view: View) {
