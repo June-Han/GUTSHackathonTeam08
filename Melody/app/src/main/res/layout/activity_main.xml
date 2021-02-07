@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pastelsunset"
-    tools:context=".HomeActivity">
+    >
 
     <Button
         android:id="@+id/buttonContinue"
@@ -26,9 +26,14 @@
         android:layout_width="305dp"
         android:layout_height="77dp"
         android:fontFamily="@font/yellowtail"
+        android:shadowColor="@color/melodyPrimary"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="100"
         android:text="@string/quoteofDay"
         android:textAlignment="center"
         android:textColor="@color/design_default_color_background"
+
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
