@@ -12,9 +12,14 @@ import androidx.core.content.ContextCompat.startActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Utils.onActivityCreateSetTheme(this)
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_main)
         PlayDefaultSound()
+        
+        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
 
         /*val quotesbtn: Button = findViewById(R.id.quotes_btn)
     quotesbtn.setOnClickListener() {
