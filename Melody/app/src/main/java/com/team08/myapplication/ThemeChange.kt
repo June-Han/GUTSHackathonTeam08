@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.team08.myapplication.Utils
 
+var themeNum = 0
 class ThemeChange : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,18 +23,22 @@ class ThemeChange : AppCompatActivity() {
         seaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeSea)
             savedInstanceState?.putInt("ThemeNo", 0)
+            themeNum = 0
         }
         sakuraButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeSakura)
             savedInstanceState?.putInt("ThemeNo", 1)
+            themeNum = 1
         }
         forestButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeForest)
             savedInstanceState?.putInt("ThemeNo", 2)
+            themeNum = 2
         }
         aquaButton.setOnClickListener {
             Utils.changeToTheme(this, Utils.themeAqua)
             savedInstanceState?.putInt("ThemeNo", 3)
+            themeNum = 3
         }
         toChatButton.setOnClickListener{
             val intent = Intent(this, Quotes::class.java)

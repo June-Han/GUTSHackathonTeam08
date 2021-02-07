@@ -12,7 +12,18 @@ var name = "Anonymous"
 class Name : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_name)
+
+        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
+        else
+        {
+            Utils.changeToTheme(this, themeNum)
+        }
+
         val proceedButton = findViewById<Button>(R.id.ProceedButton)
         if (savedInstanceState != null)
         {
