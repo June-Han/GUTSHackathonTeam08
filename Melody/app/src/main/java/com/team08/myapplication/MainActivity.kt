@@ -13,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         val quotes_btn: Button = findViewById(com.team08.myapplication.R.id.quotes_btn)
         quotes_btn.setOnClickListener(){
             val intent = Intent(this, Quotes::class.java)
+        val button = findViewById<Button>(R.id.TestButton)
+        button.setOnClickListener{
+            val intent = Intent(this, Name::class.java)
             startActivity(intent)
         }
     }
