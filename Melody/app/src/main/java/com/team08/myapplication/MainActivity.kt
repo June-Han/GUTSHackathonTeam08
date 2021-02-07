@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
         //Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_main)
 
-        val quotesbtn: Button = findViewById(R.id.quotes_btn)
+        /*val quotesbtn: Button = findViewById(R.id.quotes_btn)
         quotesbtn.setOnClickListener() {
             val intent = Intent(this, Quotes::class.java)
             startActivity(intent)
-        }
+        }*/
 
         val button = findViewById<Button>(R.id.TestButton)
         button.setOnClickListener {
