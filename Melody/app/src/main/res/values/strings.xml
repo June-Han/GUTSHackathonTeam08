@@ -3,4 +3,14 @@
     <string name="nameCardEnter">Enter your name:</string>
     <string name="namePlaceholder">name/alias</string>
     <string name="nameCardContinue">Proceed</string>
+    <string name="chatBttn">Chat</string>
+    <string name="quotesBttn">Quotes</string>
+    <string name="musicBttn">Music</string>
+    <string name="helplineBttn">Helpline</string>
+    <string name="m_card_title1">slowmotion</string>
+    <string name="m_card_desc1">Music Card Description 1</string>
+    <string name="m_card_title2">november</string>
+    <string name="m_card_desc2">Music Card Description 2</string>
+    <string name="m_card_title3">adventure</string>
+    <string name="m_card_desc3">Music Card Description 3</string>
 </resources>
