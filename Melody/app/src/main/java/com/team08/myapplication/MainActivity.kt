@@ -33,6 +33,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Helpline
+        val buttonHelpline = findViewById<Button>(R.id.button)
+        val clickListener = View.OnClickListener { view ->
+            when (view.getId()) {
+                R.id.button -> startActivity(Intent(this@MainActivity, HelplineActivity::class.java))
+            }
+        }
+
+        buttonHelpline.setOnClickListener(clickListener)
+
     }
 
 
