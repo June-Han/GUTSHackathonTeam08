@@ -35,7 +35,7 @@ class ChatActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Utils.onActivityCreateSetTheme(this);
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_chat)
         val txtMessage: TextView = findViewById(R.id.txtMessage)
         SyncData()
@@ -105,7 +105,7 @@ class ChatActivity : AppCompatActivity() {
             var layoutManager: RecyclerView.LayoutManager? = null
             var adapter: RecyclerView.Adapter<ChatRecycleAdapter.ViewHolder>? = null
             // Instantiate the RequestQueue.
-            val linkTrang = "https://melody-0f6f.restdb.io/rest/chat"
+            val linkTrang = "https://melody-0f6f.restdb.io/rest/chat?sort=ChatId"
 
             val queue = Volley.newRequestQueue(this)
 
