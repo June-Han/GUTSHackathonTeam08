@@ -22,9 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".HelplineActivity" />
-        <activity
-            android:name=".HomeActivity" />
-        <activity android:name=".MainActivity" />
 
         <service android:name=".BackgroundSoundService" />
         <activity android:name=".Name">
