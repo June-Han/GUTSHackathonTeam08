@@ -32,6 +32,11 @@ class ChatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chat)
         val txtMessage: TextView = findViewById(R.id.txtMessage)
         SyncData()
+
+        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
     }
 
     fun SyncData() {
