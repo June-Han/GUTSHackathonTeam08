@@ -92,7 +92,7 @@ class ChatActivity : AppCompatActivity() {
                     val tz: TimeZone = TimeZone.getTimeZone("Asia/Singapore")
                     val date = Date()
                     val strDate = sdf.format(date)
-                    var payload = "{\"Message\":\"" + txtMessage.text.toString() +  "\",\"Username\":\"Anonymous \",\"Timestamp\":\"" +  strDate  + "\"}"
+                    var payload = "{\"Message\":\"" + txtMessage.text.toString() +  "\",\"Username\":\"" + name + "\",\"Timestamp\":\"" +  strDate  + "\"}"
                     return payload.toByteArray()
                 }
             }
