@@ -12,9 +12,14 @@ import androidx.core.content.ContextCompat.startActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Utils.onActivityCreateSetTheme(this)
+        Utils.onActivityCreateSetTheme(this)
         setContentView(R.layout.activity_main)
         PlayDefaultSound()
+        
+        val themeNo = savedInstanceState?.getInt("ThemeNo", 0)
+        if (themeNo != null) {
+            Utils.changeToTheme(this, themeNo)
+        }
 
         /*val quotesbtn: Button = findViewById(R.id.quotes_btn)
     quotesbtn.setOnClickListener() {
@@ -27,6 +32,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
+
+        // Helpline
+        val buttonHelpline = findViewById<Button>(R.id.button)
+        val clickListener = View.OnClickListener { view ->
+            when (view.getId()) {
+                R.id.button -> startActivity(Intent(this@MainActivity, HelplineActivity::class.java))
+            }
+        }
+
+        buttonHelpline.setOnClickListener(clickListener)
 
     }
 

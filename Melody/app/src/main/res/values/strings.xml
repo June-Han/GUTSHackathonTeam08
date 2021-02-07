@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Melody</string>
+
+    <!-- Home Activity -->
+    <string name="quoteofDay">"There is hope, even when your brain tells you there isn’t."</string>
+    <string name="author">― John Green</string>
+    <string name="buttonContinue">Tab to continue</string>
+
+    <!-- Helpline Activity -->
+    <string name="helplineTitle"><u>List of Helplines</u></string>
+
     <string name="title_activity_quotes" translatable="false">Quotes</string>
     <string name="title_activity_Rquotes" translatable="false">Relationship Quotes</string>
     <string name="title_activity_Fquotes" translatable="false">Friendship Quotes</string>
@@ -25,4 +34,6 @@
     <string name="melodyPrimary3">Aqua</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/melodyPrimary"
+    tools:context=".HelplineActivity">
+
+    <TextView
+        android:id="@+id/textHotline"
+        android:layout_width="178dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="National Care Hotline"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotlineView" />
+
+    <TextView
+        android:id="@+id/textHotline4"
+        android:layout_width="327dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Institute of Mental Health's Helpline (6389-2222)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline1" />
+
+    <TextView
+        android:id="@+id/textHotline7"
+        android:layout_width="327dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="TOUCHline (1800-377-2252)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline2" />
+
+    <TextView
+        android:id="@+id/textHotline5"
+        android:layout_width="327dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Samaritans of Singapore (1800-221-4444)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline4" />
+
+    <TextView
+        android:id="@+id/textHotline1"
+        android:layout_width="150dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Mental Well-Being"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline3" />
+
+    <TextView
+        android:id="@+id/textHotline2"
+        android:layout_width="103dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Counselling"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline6" />
+
+    <TextView
+        android:id="@+id/textHotline6"
+        android:layout_width="327dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Silver Ribbon Singapore (6385-3714)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline5" />
+
+    <TextView
+        android:id="@+id/textHotline3"
+        android:layout_width="327dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="1800-202-6868 (6am-12am daily, from 1 sep 2020)"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHotline" />
+
+    <TextView
+        android:id="@+id/textHotlineView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/helplineTitle"
+        android:textColor="?android:attr/textColorTertiaryInverse"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
