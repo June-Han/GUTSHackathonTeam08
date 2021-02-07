@@ -225,7 +225,6 @@
                     android:onClick="quoteBttnFn"
                     android:text="@string/quotesBttn" />
             </TableRow>
-
         </TableLayout>
 
     </LinearLayout>
