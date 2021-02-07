@@ -28,6 +28,7 @@ class ChatActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Utils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_chat)
         val txtMessage: TextView = findViewById(R.id.txtMessage)
         SyncData()
