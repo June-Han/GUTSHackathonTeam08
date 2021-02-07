@@ -7,7 +7,7 @@
     <string name="buttonContinue">Tab to continue</string>
 
     <!-- Helpline Activity -->
-    <string name="helplineTitle"><u>List of Helplines</u></string>
+    <string name="helplineTitle">List of Helplines</string>
 
     <string name="title_activity_quotes" translatable="false">Quotes</string>
     <string name="title_activity_Rquotes" translatable="false">Relationship Quotes</string>
