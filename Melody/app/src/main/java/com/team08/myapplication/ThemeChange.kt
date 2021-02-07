@@ -20,16 +20,20 @@ class ThemeChange : AppCompatActivity() {
         val toChatButton = findViewById<Button>(R.id.ProceedToChat)
 
         seaButton.setOnClickListener {
-            Utils.changeToTheme(this, Utils.themeSea);
+            Utils.changeToTheme(this, Utils.themeSea)
+            savedInstanceState?.putInt("ThemeNo", 0)
         }
         sakuraButton.setOnClickListener {
-            Utils.changeToTheme(this, Utils.themeSakura);
+            Utils.changeToTheme(this, Utils.themeSakura)
+            savedInstanceState?.putInt("ThemeNo", 1)
         }
         forestButton.setOnClickListener {
-            Utils.changeToTheme(this, Utils.themeForest);
+            Utils.changeToTheme(this, Utils.themeForest)
+            savedInstanceState?.putInt("ThemeNo", 2)
         }
         aquaButton.setOnClickListener {
-            Utils.changeToTheme(this, Utils.themeAqua);
+            Utils.changeToTheme(this, Utils.themeAqua)
+            savedInstanceState?.putInt("ThemeNo", 3)
         }
         toChatButton.setOnClickListener{
             val intent = Intent(this, ChatActivity::class.java)
