@@ -20,11 +20,11 @@
     <string name="quotesBttn">Quotes</string>
     <string name="musicBttn">Mediate</string>
     <string name="helplineBttn">SOS</string>
-    <string name="m_card_title1">slowmotion</string>
+    <string name="m_card_title1">Slowmotion</string>
     <string name="m_card_desc1">Benjamin Tissot</string>
-    <string name="m_card_title2">november</string>
+    <string name="m_card_title2">November</string>
     <string name="m_card_desc2">Benjamin Tissot</string>
-    <string name="m_card_title3">adventure</string>
+    <string name="m_card_title3">Adventure</string>
     <string name="m_card_desc3">Benjamin Tissot</string>
     <string name="nameCardTheme">Choose Your Color Theme: \nWhich melodies would you sing today?</string>
     <string name="fab_content_desc">+</string>
