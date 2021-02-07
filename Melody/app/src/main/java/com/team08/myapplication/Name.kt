@@ -29,7 +29,7 @@ class Name : AppCompatActivity() {
             if (EnterName.text.toString() != "") {
                 name = NameHolder.editText?.text.toString()
             }
-            val intent = Intent(this, ThemeChange::class.java)
+            val intent = Intent(this, Chat::class.java)
             startActivity(intent)
         }
     }
