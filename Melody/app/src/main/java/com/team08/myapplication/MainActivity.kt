@@ -10,14 +10,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val quotes_btn: Button = findViewById(com.team08.myapplication.R.id.quotes_btn)
-        quotes_btn.setOnClickListener(){
+        val quotesbtn: Button = findViewById(R.id.quotes_btn)
+        quotesbtn.setOnClickListener() {
             val intent = Intent(this, Quotes::class.java)
-        val button = findViewById<Button>(R.id.TestButton)
-        button.setOnClickListener{
-            val intent = Intent(this, Name::class.java)
             startActivity(intent)
         }
-    }
+            val button = findViewById<Button>(R.id.TestButton)
+            button.setOnClickListener {
+                val intent = Intent(this, Name::class.java)
+                startActivity(intent)
+            }
+        }
 
-}
+    }
