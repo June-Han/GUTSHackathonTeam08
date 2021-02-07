@@ -3,4 +3,12 @@
     <string name="nameCardEnter">Enter your name:</string>
     <string name="namePlaceholder">name/alias</string>
     <string name="nameCardContinue">Proceed</string>
+    <string name="nameCardTheme">Choose Your Color Theme: \nWhich melodies would you sing today?</string>
+    <string name="fab_content_desc">+</string>
+    <string name="melodyPrimary">Sea</string>
+    <string name="melodyPrimary1">Sakura</string>
+    <string name="melodyPrimary2">Forest</string>
+    <string name="melodyPrimary3">Aqua</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

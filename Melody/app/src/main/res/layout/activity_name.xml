@@ -18,7 +18,7 @@
         android:layout_margin="3dp"
         android:gravity="center"
         app:cardElevation="3dp"
-        app:strokeColor="@color/purple_200"
+        app:strokeColor="@color/melodyPrimary"
         app:strokeWidth="1dp">
 
         <RelativeLayout
