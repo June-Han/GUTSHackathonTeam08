@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Melody">
-       
+
+        <activity android:name=".Music"></activity>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,6 +22,7 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".BackgroundSoundService" />
         <activity android:name=".Name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -44,7 +46,6 @@
         <activity android:name=".Relationship_quotes"/>
         <activity android:name=".Friendship_quotes"/>
         <activity android:name=".Life_quotes"/>
-
     </application>
 
 </manifest>
