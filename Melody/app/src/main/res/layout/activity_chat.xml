@@ -51,6 +51,7 @@
                 android:layout_marginTop="1.5dp"
                 android:ems="10"
                 android:background="@color/white"
+                android:textColor="@color/black"
                 android:inputType="textPersonName">
 
 
