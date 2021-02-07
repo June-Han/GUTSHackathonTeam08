@@ -13,14 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Melody">
 
-        <activity android:name=".Music"></activity>
+        <activity android:name=".Music" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HelplineActivity" />
+        <activity
+            android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
 
         <service android:name=".BackgroundSoundService" />
         <activity android:name=".Name">
@@ -46,6 +50,10 @@
         <activity android:name=".Relationship_quotes"/>
         <activity android:name=".Friendship_quotes"/>
         <activity android:name=".Life_quotes"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
