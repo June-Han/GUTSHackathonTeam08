@@ -32,8 +32,8 @@
     <string name="melodyPrimary1">Sakura</string>
     <string name="melodyPrimary2">Forest</string>
     <string name="melodyPrimary3">Aqua</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
+    <string name="musicCard_content_description_media1">MC Media 1</string>
+    <string name="musicCard_content_description_media2">MC Media 2</string>
+    <string name="musicCard_content_description_media3">MC Media 3</string>
 </resources>

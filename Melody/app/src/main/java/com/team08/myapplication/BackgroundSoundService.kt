@@ -26,9 +26,6 @@ class BackgroundSoundService : Service() {
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
 
-//        Toast.makeText(getApplicationContext(), "Playing Music in the Background",    Toast.LENGTH_SHORT).show();
-//        val result = intent.getStringExtra("EXTRA_SONG")
-//        Toast.makeText(getApplicationContext(), "Got int_condition",    Toast.LENGTH_SHORT).show();
         if (intent.getAction().equals("november")) {
             player.stop()
             player = MediaPlayer.create(this, R.raw.november)
@@ -38,7 +35,7 @@ class BackgroundSoundService : Service() {
             Toast.makeText(getApplicationContext(), "november result",    Toast.LENGTH_SHORT).show();
         } else if (intent.getAction().equals("slowmotion")) {
             player.stop()
-            player = MediaPlayer.create(this, R.raw.november)
+            player = MediaPlayer.create(this, R.raw.slowmotion)
             player.isLooping = true // Set looping
             player.setVolume(100f, 100f)
             player.start()
@@ -62,6 +59,7 @@ class BackgroundSoundService : Service() {
 
     override fun onStart(intent: Intent, startId: Int) {
         // TO DO
+        player.start()
     }
 
     fun onUnBind(arg0: Intent): IBinder? {
@@ -70,11 +68,9 @@ class BackgroundSoundService : Service() {
     }
 
     fun onStop() {
-
     }
 
     fun onPause() {
-
     }
 
     override fun onDestroy() {

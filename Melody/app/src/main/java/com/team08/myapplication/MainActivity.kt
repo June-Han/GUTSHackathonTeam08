@@ -75,4 +75,11 @@ class MainActivity : AppCompatActivity() {
         startService(intent)
     }
 
+    @Override
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, BackgroundSoundService::class.java)
+        stopService(intent)
+    }
+
 }
