@@ -7,132 +7,255 @@
     android:background="@color/white"
     tools:context=".HelplineActivity">
 
-    <TextView
-        android:id="@+id/textHotline"
-        android:layout_width="178dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif"
-        android:text="National Care Hotline"
-        android:textColor="@color/melodyPrimary"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotlineView" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textHotline6"
-        android:layout_width="327dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="Silver Ribbon Singapore (6385-3714)"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textHotline5"
-        android:layout_width="327dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="Samaritans of Singapore (1800-221-4444)"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline4" />
+            <TextView
+                android:id="@+id/textHotlineView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/helplineTitle"
+                android:textColor="@color/melodyPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textHotline3"
-        android:layout_width="327dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="1800-202-6868 (6am-12am daily, from 1 sep 2020)"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline" />
+            <TextView
+                android:id="@+id/textHotline"
+                android:layout_width="178dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="National Care Hotline"
+                android:textColor="@color/melodyPrimary"
+                android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textHotline7"
-        android:layout_width="327dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="TOUCHline (1800-377-2252)"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline2" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hotlineCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="auto"
+                app:cardBackgroundColor="@color/loginPageBackgroundColor"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/textHotline2"
-        android:layout_width="103dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif"
-        android:text="Counselling"
-        android:textColor="@color/melodyPrimary"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline6" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
-    <TextView
-        android:id="@+id/textHotline1"
-        android:layout_width="150dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif"
-        android:text="Mental Well-Being"
-        android:textColor="@color/melodyPrimary"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline3" />
+                    <TextView
+                        android:id="@+id/textHotline3"
+                        android:layout_width="327dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif"
+                        android:text="1800-202-6868 (6am-12am daily, from 1 sep 2020)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textHotline4"
-        android:layout_width="327dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:text="Institute of Mental Health's Helpline (6389-2222)"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textHotline1" />
 
-    <TextView
-        android:id="@+id/textHotlineView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/helplineTitle"
-        android:textColor="@color/melodyPrimary"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textHotline1"
+                android:layout_width="150dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Mental Well-Being"
+                android:textColor="@color/melodyPrimary"
+                android:textSize="18sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hotlineCard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="auto"
+                app:cardBackgroundColor="@color/loginPageBackgroundColor"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textHotline4"
+                        android:layout_width="327dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Institute of Mental Health's Helpline (6389-2222)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hotlineCard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="auto"
+                app:cardBackgroundColor="@color/loginPageBackgroundColor"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textHotline5"
+                        android:layout_width="327dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Samaritans of Singapore (1800-221-4444)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.297"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textHotline4" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hotlineCard4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="auto"
+                app:cardBackgroundColor="@color/loginPageBackgroundColor"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/textHotline6"
+                        android:layout_width="327dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Silver Ribbon Singapore (6385-3714)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.297"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textHotline5" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textHotline2"
+                android:layout_width="150dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Counselling"
+                android:textColor="@color/melodyPrimary"
+                android:textSize="18sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hotlineCard5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="auto"
+                app:cardBackgroundColor="@color/loginPageBackgroundColor"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/textHotline7"
+                        android:layout_width="327dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="TOUCHline (1800-377-2252)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.297"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textHotline2" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
