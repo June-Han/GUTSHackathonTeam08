@@ -1,4 +1,5 @@
-# Challenge Title: Improving lives during lockdown - GUTSHackathonTeam08
+# Challenge Title: Improving lives during lockdown
+# GUTSHackathonTeam08
 GUTSHackathonTeam08 - 2021 <br/>
 SAS Challenge
 
