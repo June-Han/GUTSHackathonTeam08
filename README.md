@@ -1,7 +1,6 @@
 # Challenge Title: Improving lives during lockdown
-# GUTSHackathonTeam08
-GUTSHackathonTeam08 - 2021 <br/>
-SAS Challenge
+### GUTSHackathonTeam08 - 2021 <br/>
+### SAS Challenge
 
 
 ### Done By: Team Depression Tier
