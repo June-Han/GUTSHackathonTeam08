@@ -223,7 +223,8 @@
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.25"
+                    android:textSize="12dp"
                     android:onClick="quoteBttnFn"
                     android:text="@string/quotesBttn" />
 
@@ -231,7 +232,8 @@
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.25"
+                    android:textSize="12dp"
                     android:onClick="chatBttnFn"
                     android:text="@string/chatBttn" />
 
@@ -239,7 +241,8 @@
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.25"
+                    android:textSize="12dp"
                     android:onClick="musicBttnFn"
                     android:text="@string/musicBttn" />
 
@@ -247,7 +250,8 @@
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.25"
+                    android:textSize="12dp"
                     android:onClick="helplineBttnFn"
                     android:text="@string/helplineBttn" />
             </TableRow>
