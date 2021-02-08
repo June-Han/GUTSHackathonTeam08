@@ -1,7 +1,5 @@
 # Challenge Title: Improving lives during lockdown
-### GUTSHackathonTeam08 - 2021 <br/>
-### SAS Challenge
-
+### GUTSHackathonTeam08 - 2021 (SAS Challenge)<br/>
 
 ### Done By: Team Depression Tier
 #### App Name: Melody
