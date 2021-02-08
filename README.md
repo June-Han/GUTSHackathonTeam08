@@ -1,5 +1,5 @@
-# Challenge Title: Improving lives during lockdown
-### GUTSHackathonTeam08 - 2021 (SAS Challenge)<br/>
+# SAS Challenge: Improving lives during lockdown
+### GUTSHackathonTeam08 - 2021 <br/>
 
 ### Done By: Team Depression Tier
 #### App Name: Melody
@@ -10,7 +10,7 @@ Goh Ru Hui <br/>
 Chen Nili <br/>
 
 
-Challenge:<br/>
+#### Challenge:<br/>
 The last year has resulted in a new way of working, socialising, learning and living. We would like to challenge participants to come up with innovative ways of improving lives in this lockdown era.<br/>
 
 We are leaving the challenge as open ended as possible, the sole goal is to build something that you feel brings a positive impact to people working, schooling and socialising at home. Some examples of areas we feel could benefit from innovative thinking are:<br/>
