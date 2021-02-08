@@ -1,5 +1,4 @@
-# Challenge Title: Improving lives during lockdown
-# GUTSHackathonTeam08
+# Challenge Title: Improving lives during lockdown - GUTSHackathonTeam08
 GUTSHackathonTeam08 - 2021 <br/>
 SAS Challenge
 
@@ -15,7 +14,9 @@ Chen Nili <br/>
 
 Challenge:<br/>
 The last year has resulted in a new way of working, socialising, learning and living. We would like to challenge participants to come up with innovative ways of improving lives in this lockdown era.<br/>
+
 We are leaving the challenge as open ended as possible, the sole goal is to build something that you feel brings a positive impact to people working, schooling and socialising at home. Some examples of areas we feel could benefit from innovative thinking are:<br/>
+
 • Working and collaborating: could you building something that makes it easier for teams to work together? Perhaps think about sharing information, collaborating on design, plugins for messaging apps etc<br/>
 
 • Home Schooling and Learning: what innovative solutions could you look at to help parents home school, helps children learn or helps balance the time between working during the day whilst looking after children.<br/>
