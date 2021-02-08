@@ -49,7 +49,8 @@
 
             <EditText
                 android:id="@+id/txtMessage"
-                android:layout_width="380dp"
+                android:layout_weight="0.80"
+                android:layout_width="0dp"
                 android:layout_height="34dp"
                 android:background="@color/white"
                 android:ems="10"
@@ -61,7 +62,8 @@
 
             <Button
                 android:id="@+id/btnSend"
-                android:layout_width="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
                 android:layout_height="46dp"
                 android:layout_marginTop="-1dp"
                 android:drawableRight="@android:drawable/ic_media_play"
@@ -90,6 +92,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="12dp"
                         android:onClick="quoteBttnFn"
                         android:text="@string/quotesBttn" />
 
@@ -98,6 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="12dp"
                         android:onClick="chatBttnFn"
                         android:text="@string/chatBttn" />
 
@@ -106,6 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="12dp"
                         android:onClick="musicBttnFn"
                         android:text="@string/musicBttn" />
 
@@ -114,6 +119,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="12dp"
                         android:onClick="helplineBttnFn"
                         android:text="@string/helplineBttn" />
 
