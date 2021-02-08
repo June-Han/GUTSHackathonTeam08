@@ -6,7 +6,7 @@ SAS Challenge
 ### Done By: Team Depression Tier
 #### App Name: Melody
 Htet Htet June Han <br/>
-Wei Hao <br/>
+Clif, Wei Hao <br/>
 Alfred Lin <br/>
 Goh Ru Hui <br/>
 Chen Nili <br/>
