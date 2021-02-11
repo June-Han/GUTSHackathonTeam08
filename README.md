@@ -9,6 +9,7 @@ Alfred Lin <br/>
 Goh Ru Hui <br/>
 Chen Nili <br/>
 
+Demo Link : https://www.youtube.com/watch?v=gVzpLzOltyI&feature=youtu.be
 
 #### Challenge:<br/>
 The last year has resulted in a new way of working, socialising, learning and living. We would like to challenge participants to come up with innovative ways of improving lives in this lockdown era.<br/>
