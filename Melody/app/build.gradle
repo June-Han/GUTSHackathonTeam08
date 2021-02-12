@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.team08.myapplication"
+        applicationId "com.team08.cs"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

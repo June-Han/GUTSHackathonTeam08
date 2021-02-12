@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.team08.myapplication",
+  "applicationId": "com.team08.cs",
   "variantName": "processReleaseResources",
   "elements": [
     {
