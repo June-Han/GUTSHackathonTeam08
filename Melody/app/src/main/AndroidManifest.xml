@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team08.myapplication">
+    package="com.team08.cs">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,47 +13,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Melody">
 
-        <activity android:name=".Music" />
+        <activity android:name="com.team08.cs.Music" />
 
-        <activity android:name=".SplashActivity" >
+        <activity android:name="com.team08.cs.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelplineActivity" />
+        <activity android:name="com.team08.cs.HelplineActivity" />
 
-        <activity android:name=".MainActivity" >
+        <activity android:name="com.team08.cs.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=
-                    "com.team08.myapplication.MainActivity" />
+                    "com.team08.cs.MainActivity" />
         </activity>
 
-        <service android:name=".BackgroundSoundService" />
-        <activity android:name=".Name">
+        <service android:name="com.team08.cs.BackgroundSoundService" />
+        <activity android:name="com.team08.cs.Name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=
-                    "com.team08.myapplication.Name" />
+                    "com.team08.cs.Name" />
         </activity>
 
-        <activity android:name=".ThemeChange">
+        <activity android:name="com.team08.cs.ThemeChange">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=
-                    "com.team08.myapplication.ThemeChange" />
+                    "com.team08.cs.ThemeChange" />
         </activity>
 
         <activity
-            android:name=".ChatActivity"
+            android:name="com.team08.cs.ChatActivity"
             android:label="Chat">
         </activity>
 
-        <activity android:name=".Quotes"/>
-        <activity android:name=".Relationship_quotes"/>
-        <activity android:name=".Friendship_quotes"/>
-        <activity android:name=".Life_quotes"/>
+        <activity android:name="com.team08.cs.Quotes"/>
+        <activity android:name="com.team08.cs.Relationship_quotes"/>
+        <activity android:name="com.team08.cs.Friendship_quotes"/>
+        <activity android:name="com.team08.cs.Life_quotes"/>
 
         <meta-data
             android:name="preloaded_fonts"
