@@ -2,7 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="Theme.MelodySea" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MelodySea" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/melodyPrimary</item>
         <item name="colorPrimaryDark">@color/melodyPrimaryVariant</item>
@@ -11,7 +11,7 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
-    <style name="Theme.MelodySakura" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MelodySakura" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/melodyPrimary1</item>
         <item name="colorPrimaryDark">@color/melodyPrimary1</item>
@@ -20,7 +20,7 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
-    <style name="Theme.MelodyForest" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MelodyForest" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/melodyPrimary2</item>
         <item name="colorPrimaryDark">@color/melodyPrimary2</item>
@@ -29,7 +29,7 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
-    <style name="Theme.MelodyAqua" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MelodyAqua" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/melodyPrimary3</item>
         <item name="colorPrimaryDark">@color/melodyPrimary3</item>

@@ -205,56 +205,63 @@
         </TableLayout>
     </ScrollView>
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/music_bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-        <TableLayout
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="bottom">
-            <TableRow
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="quoteBttnFn"
-                    android:text="@string/quotesBttn" />
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="12dp"
+                        android:onClick="quoteBttnFn"
+                        android:text="@string/quotesBttn" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="chatBttnFn"
-                    android:text="@string/chatBttn" />
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="12dp"
+                        android:onClick="chatBttnFn"
+                        android:text="@string/chatBttn" />
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="musicBttnFn"
-                    android:text="@string/musicBttn" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="12dp"
+                        android:onClick="musicBttnFn"
+                        android:text="@string/musicBttn" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="helplineBttnFn"
-                    android:text="@string/helplineBttn" />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textSize="12dp"
+                        android:onClick="helplineBttnFn"
+                        android:text="@string/helplineBttn" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>-->

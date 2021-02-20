@@ -12,16 +12,19 @@
     <LinearLayout
         android:id="@+id/LinearLayoutChatHolder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/EnterChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <ScrollView
             android:id="@+id/scroll"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="11"
-            >
+            android:layout_weight="11">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,102 +34,105 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerViewChatPlaceholder"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_height="match_parent" />
             </LinearLayout>
         </ScrollView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="0.89"
-
-            >
-
-            <EditText
-                android:id="@+id/txtMessage"
-                android:layout_weight="0.80"
-                android:layout_width="0dp"
-                android:layout_height="34dp"
-                android:background="@color/white"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="@color/black"
-                android:textSize="15dp">
-
-            </EditText>
-
-            <Button
-                android:id="@+id/btnSend"
-                android:layout_width="0dp"
-                android:layout_weight="0.20"
-                android:layout_height="46dp"
-                android:layout_marginTop="-1dp"
-                android:drawableRight="@android:drawable/ic_media_play"
-                android:onClick="SendMessage" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:gravity="bottom"
-            android:layout_weight="0.89"
-            android:orientation="horizontal">
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:gravity="bottom">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.25"
-                        android:textSize="12dp"
-                        android:onClick="quoteBttnFn"
-                        android:text="@string/quotesBttn" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.25"
-                        android:textSize="12dp"
-                        android:onClick="chatBttnFn"
-                        android:text="@string/chatBttn" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.25"
-                        android:textSize="12dp"
-                        android:onClick="musicBttnFn"
-                        android:text="@string/musicBttn" />
-
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.25"
-                        android:textSize="12dp"
-                        android:onClick="helplineBttnFn"
-                        android:text="@string/helplineBttn" />
-
-
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/EnterChat"
+        app:layout_constraintTop_toBottomOf="@id/LinearLayoutChatHolder"
+        app:layout_constraintBottom_toTopOf="@id/chat_bottom_navigation">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_weight="0.80"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="15dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="46dp"
+            android:layout_marginTop="-1dp"
+            android:drawableRight="@android:drawable/ic_media_play"
+            android:onClick="SendMessage" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/chat_bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="bottom"
+                android:layout_weight="0.89"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:textSize="12dp"
+                            android:onClick="quoteBttnFn"
+                            android:text="@string/quotesBttn" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:textSize="12dp"
+                            android:onClick="chatBttnFn"
+                            android:text="@string/chatBttn" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:textSize="12dp"
+                            android:onClick="musicBttnFn"
+                            android:text="@string/musicBttn" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:textSize="12dp"
+                            android:onClick="helplineBttnFn"
+                            android:text="@string/helplineBttn" />
+
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout> -->

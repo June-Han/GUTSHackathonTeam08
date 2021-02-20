@@ -7,109 +7,119 @@
     android:layout_height="match_parent"
     tools:context= ".Quotes">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="100dp"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/quotes_bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_height="wrap_content"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="15dp"
-            app:cardElevation="10dp">
-            <ImageButton
-                android:id="@+id/relationship_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="208dp"
-                app:srcCompat="@drawable/testing" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="15dp"
-            app:cardElevation="10dp">
-            <ImageButton
-                android:id="@+id/Friendship_btn2"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="208dp"
-                app:srcCompat="@drawable/friend" />
-        </com.google.android.material.card.MaterialCardView>
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                app:cardElevation="10dp">
+                <ImageButton
+                    android:id="@+id/relationship_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="208dp"
+                    app:srcCompat="@drawable/testing" />
+            </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_margin="20dp"
-            android:padding="15dp"
-            app:cardElevation="10dp">
-            <ImageButton
-                android:id="@+id/life_btn3"
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="208dp"
-                app:srcCompat="@drawable/lifequotes" />
-        </com.google.android.material.card.MaterialCardView>
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                app:cardElevation="10dp">
+                <ImageButton
+                    android:id="@+id/Friendship_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="208dp"
+                    app:srcCompat="@drawable/friend" />
+            </com.google.android.material.card.MaterialCardView>
 
-    </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                app:cardElevation="10dp">
+                <ImageButton
+                    android:id="@+id/life_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="208dp"
+                    app:srcCompat="@drawable/lifequotes" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/quotes_bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="bottom">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="quoteBttnFn"
-                    android:text="@string/quotesBttn" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="chatBttnFn"
-                    android:text="@string/chatBttn" />
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="musicBttnFn"
-                    android:text="@string/musicBttn" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:textSize="12dp"
-                    android:onClick="helplineBttnFn"
-                    android:text="@string/helplineBttn" />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="bottom"
+         android:orientation="horizontal">
+         <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="bottom">
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <Button
+                     android:id="@+id/button3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.25"
+                     android:textSize="12dp"
+                     android:onClick="quoteBttnFn"
+                     android:text="@string/quotesBttn" />
+
+                 <Button
+                     android:id="@+id/button4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.25"
+                     android:textSize="12dp"
+                     android:onClick="chatBttnFn"
+                     android:text="@string/chatBttn" />
+
+                 <Button
+                     android:id="@+id/button2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.25"
+                     android:textSize="12dp"
+                     android:onClick="musicBttnFn"
+                     android:text="@string/musicBttn" />
+
+                 <Button
+                     android:id="@+id/button"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.25"
+                     android:textSize="12dp"
+                     android:onClick="helplineBttnFn"
+                     android:text="@string/helplineBttn" />
+             </TableRow>
+         </TableLayout>
+     </LinearLayout> -->

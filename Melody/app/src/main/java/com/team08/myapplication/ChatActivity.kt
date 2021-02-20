@@ -22,6 +22,7 @@ import kotlinx.android.synthetic.main.chat_card_layout.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.HashMap
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 var isTyping = false
 
@@ -32,6 +33,32 @@ class ChatActivity : AppCompatActivity() {
     var haltFlag = false
     lateinit var chatRecords : Array<Chat>
     val mainHandler = Handler(Looper.getMainLooper())
+
+    private val BottomNavi = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        when(item.itemId) {
+            R.id.Page1 -> {
+                val intent = Intent(this@ChatActivity, Quotes::class.java)
+                startActivity(intent)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.Page2 -> {
+                val intent = Intent(this@ChatActivity, ChatActivity::class.java)
+                startActivity(intent)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.Page3 -> {
+                val intent = Intent(this@ChatActivity, Music::class.java)
+                startActivity(intent)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.Page4 -> {
+                val intent = Intent(this@ChatActivity, HelplineActivity::class.java)
+                startActivity(intent)
+                return@OnNavigationItemSelectedListener true
+            }
+            else -> return@OnNavigationItemSelectedListener false
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,11 +77,7 @@ class ChatActivity : AppCompatActivity() {
         }
 
         txtMessage.setOnFocusChangeListener(OnFocusChangeListener { v, hasFocus ->
-            if (!hasFocus) {
-                isTyping = false
-            } else {
-                isTyping = true
-            }
+            isTyping = hasFocus
         })
 
         scroll.setOnClickListener() {
@@ -75,8 +98,13 @@ class ChatActivity : AppCompatActivity() {
                 mainHandler.postDelayed(this, 4000)
             }
         })
-    }
 
+        val bottomNaviBar = findViewById<BottomNavigationView>(R.id.chat_bottom_navigation)
+        bottomNaviBar.menu.findItem(R.id.Page2).isChecked = true
+        bottomNaviBar.setOnNavigationItemSelectedListener(BottomNavi)
+    }
+    /*
+    //Comment out all the button code
     fun chatBttnFn(view: View) {
         val intent1 = Intent(this, ChatActivity::class.java)
         startActivity(intent1)
@@ -95,7 +123,7 @@ class ChatActivity : AppCompatActivity() {
     fun helplineBttnFn(view: View) {
         val intent4 = Intent(this, HelplineActivity::class.java)
         startActivity(intent4)
-    }
+    }*/
 
 
     fun SyncData() {
